@@ -30,7 +30,7 @@ export async function main () {
 
   const server = http.createServer(app)
 
-  server.listen(Server.port, (err: Error) => {
+  server.listen(Server.port, (err?: Error) => {
     if (err) {
       console.error(err)
 
