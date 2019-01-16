@@ -1,4 +1,4 @@
-import {Request, Response, NextFunction, RequestHandler} from 'express'
+import {Request, Response, NextFunction} from 'express'
 
 // tslint:disable-next-line no-any
 export type PromiseMiddleware = (req: Request, res: Response) => Promise<any>
