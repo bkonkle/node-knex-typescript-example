@@ -8,7 +8,11 @@ export const promise = (middleware: PromiseMiddleware) => (
     try {
       const result = await middleware(req, res)
 
-      if (!result) next()
+      if (result) {
+        res.json(result)
+      } else {
+        next()
+      }
     } catch (err) {
       next(err)
     }
