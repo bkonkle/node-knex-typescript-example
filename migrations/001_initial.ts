@@ -20,6 +20,7 @@ export async function up (knex: Knex) {
     // Fields
     table.string('username')
       .unique()
+      .notNullable()
       .comment(`The User''s login id - usually their email address.`)
 
     table.string('firstName')
@@ -30,6 +31,7 @@ export async function up (knex: Knex) {
 
     table.boolean('isActive')
       .comment(`If false, the User is suspended.`)
+      .defaultTo(true)
   })
 
   // Address

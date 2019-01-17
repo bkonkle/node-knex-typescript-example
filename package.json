@@ -32,6 +32,7 @@
     "apollo-server-express": "^2.3.1",
     "body-parser": "^1.18.3",
     "chalk": "^2.4.2",
+    "cookie-session": "^2.0.0-beta.3",
     "cors": "^2.8.5",
     "dotenv": "^6.2.0",
     "express": "^4.16.4",
@@ -49,6 +50,7 @@
   },
   "devDependencies": {
     "@playlyfe/gql": "^2.6.1",
+    "@types/cookie-session": "^2.0.36",
     "@types/dotenv": "^6.1.0",
     "@types/ioredis": "^4.0.4",
     "@types/knex": "^0.15.1",
